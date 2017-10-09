@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Psychic-Game</title>
-  <!-- CSS Reset -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Psychic-Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-  <div class=container>
-    <h1>The Psychic Game</h1>
-    <p id="wins">Wins:</p>
-    <p id="losses">Losses:</p>
-    <p id="guessesLeft">Guesses Left:</p>
-    <p id="guesses">Your Guesses so far:</p>
-  </div>
-<!-- JavaScript -->
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- Bootstrap Content-->
+    <div class=container>
+        <div class="jumbotron text-center">
+            <h1>The Psychic Game</h1>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Game Status</h3></div>
+            <div class="panel-body">
+                <button type="button" class="btn btn-success">Wins: <span class="badge" id="wins">0</span></button>
+                <button type="button" class="btn btn-danger">Losses: <span class="badge" id="losses">0</span></button>
+                <button type="button" class="btn btn-primary">Guesses Left: <span class="badge" id="guessesLeft">9</span></button>
+            </div>
+          </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Your Guesses so far</h3></div>
+            <div class="panel-body" id="guesses"><h2></h2></div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
